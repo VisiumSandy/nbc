@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NBC Dépannage — Dépannage Auto, Enlèvement Épave, Achat/Vente VO · Toute la France</title>
-  <meta name="description" content="NBC Dépannage : dépannage auto 24h/24 7j/7, enlèvement d'épave gratuit, achat et vente de véhicules d'occasion. Intervention toute la France. Appelez le 06 61 94 82 50." />
+  <meta name="description" content="NBC Dépannage : dépannage auto 24h/24 7j/7, enlèvement d'épave gratuit, achat et vente de véhicules d'occasion. Intervention toute la France. Appelez le 06 58 32 28 64." />
   <link rel="canonical" href="https://nbc-depannage.fr/" />
 
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231c1c22'/><text x='50%25' y='54%25' font-size='18' font-family='sans-serif' font-weight='900' fill='%23FF6B1A' text-anchor='middle' dominant-baseline='middle'>N</text></svg>" />
@@ -20,41 +20,212 @@
     "@context": "https://schema.org",
     "@type": "AutoRepair",
     "name": "NBC Dépannage",
-    "telephone": "+33661948250",
-    "address": {"@type": "PostalAddress","streetAddress": "Varennes-Vauzelles","addressLocality": "Varennes-Vauzelles","postalCode": "58640","addressCountry": "FR"},
+    "telephone": "+33658322864",
+    "address": {"@type": "PostalAddress","streetAddress": "1 Rue André Malraux","addressLocality": "Varennes-Vauzelles","postalCode": "58640","addressCountry": "FR"},
     "openingHoursSpecification": {"@type": "OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens": "00:00","closes": "23:59"},
     "areaServed": "France"
   }
   </script>
+
+  <style>
+    /* ═══════════════════════════════════════════════
+       GUIDES SECTION — styles isolés
+    ═══════════════════════════════════════════════ */
+    .section--guides {
+      background: var(--bg);
+      padding: 96px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .guides-header {
+      margin-bottom: 64px;
+    }
+
+    .guides-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+
+    .guides-line {
+      display: block;
+      width: 32px;
+      height: 2px;
+      background: var(--accent);
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+
+    .guides-title-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: end;
+      gap: 40px;
+    }
+
+    .guides-main-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: -1.5px;
+      color: var(--text);
+    }
+
+    .guides-main-title em {
+      color: var(--accent);
+      font-style: normal;
+    }
+
+    .guides-subtitle {
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.7;
+      padding-bottom: 8px;
+    }
+
+    /* Grid */
+    .guides-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+      background: var(--border);
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    /* Cards */
+    .guide-card {
+      background: var(--bg2);
+      padding: 36px 36px 32px;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: inherit;
+      transition: background 0.25s;
+      cursor: pointer;
+    }
+
+    .guide-card:hover {
+      background: var(--bg3, #1c1c24);
+      text-decoration: none;
+    }
+
+    .guide-card:hover .guide-cta {
+      gap: 10px;
+    }
+
+    .guide-card--wide {
+      grid-column: span 2;
+    }
+
+    .guide-num {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.72rem;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      margin-bottom: 14px;
+      opacity: 0.6;
+    }
+
+    .guide-icon {
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 107, 26, 0.1);
+      border: 1px solid rgba(255, 107, 26, 0.18);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+      margin-bottom: 20px;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .guide-card:hover .guide-icon {
+      background: rgba(255, 107, 26, 0.18);
+      border-color: rgba(255, 107, 26, 0.35);
+    }
+
+    .guide-title-card {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+
+    .guide-desc {
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.7;
+      flex: 1;
+      margin-bottom: 20px;
+    }
+
+    .guide-cta {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--accent);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: gap 0.2s;
+      margin-top: auto;
+    }
+
+    /* City pills on wide card */
+    .guide-city-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .guide-city-pills span {
+      font-size: 0.78rem;
+      padding: 4px 12px;
+      border-radius: 20px;
+      background: rgba(255, 107, 26, 0.07);
+      border: 1px solid rgba(255, 107, 26, 0.15);
+      color: var(--muted);
+      transition: all 0.2s;
+    }
+
+    .guide-card:hover .guide-city-pills span {
+      border-color: rgba(255, 107, 26, 0.3);
+      color: var(--text);
+    }
+
+    /* Responsive guides */
+    @media (max-width: 768px) {
+      .guides-title-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .guides-grid {
+        grid-template-columns: 1fr;
+      }
+      .guide-card--wide {
+        grid-column: span 1;
+      }
+      .guide-card {
+        padding: 28px 24px;
+      }
+      .section--guides {
+        padding: 64px 0;
+      }
+    }
+  </style>
 </head>
 <body>
-
-  <!-- ═══ LIVE TICKER ═══ -->
-  <div class="live-ticker" id="live-ticker">
-    <div class="ticker-inner">
-      <span class="ticker-label">
-        <span class="ticker-dot"></span>
-        LIVE
-      </span>
-      <div class="ticker-track">
-        <div class="ticker-content" id="ticker-content">
-          <span>🔧 Dépannage effectué — Autoroute A6, Lyon</span>
-          <span>🚗 Épave enlevée — Nevers, 58</span>
-          <span>⚡ Batterie à plat — Intervention en cours</span>
-          <span>🔩 Remorquage — Paris vers Mâcon</span>
-          <span>✅ VO vendue — Peugeot 308, contrôlée technique OK</span>
-          <span>🛞 Crevaison réparée — RN7, Cosne-sur-Loire</span>
-          <span>🔧 Dépannage effectué — Autoroute A6, Lyon</span>
-          <span>🚗 Épave enlevée — Nevers, 58</span>
-          <span>⚡ Batterie à plat — Intervention en cours</span>
-          <span>🔩 Remorquage — Paris vers Mâcon</span>
-          <span>✅ VO vendue — Peugeot 308, contrôlée technique OK</span>
-          <span>🛞 Crevaison réparée — RN7, Cosne-sur-Loire</span>
-        </div>
-      </div>
-      <a href="tel:+33661948250" class="ticker-cta">Appeler →</a>
-    </div>
-  </div>
 
   <!-- ═══ HEADER ═══ -->
   <header class="site-header" id="site-header" role="banner">
@@ -72,14 +243,14 @@
 
       <nav class="header-nav" aria-label="Navigation principale">
         <a href="#services">Services</a>
-        <a href="#diagnostic">Diagnostic</a>
+        <a href="#guides">Guides</a>
         <a href="#zone">Zone</a>
         <a href="#contact">Contact</a>
       </nav>
 
       <div class="header-cta">
         <a href="#contact" class="btn btn-ghost">Devis / Contact</a>
-        <a href="tel:+33661948250" class="btn btn-primary" aria-label="Appeler NBC Dépannage">
+        <a href="tel:+33658322864" class="btn btn-primary" aria-label="Appeler NBC Dépannage">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.61 1.18 2 2 0 012.59 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l.87-.87a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
           Appeler maintenant
         </a>
@@ -92,12 +263,12 @@
 
     <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
       <a href="#services" class="mobile-link">Services</a>
-      <a href="#diagnostic" class="mobile-link">Diagnostic</a>
+      <a href="#guides" class="mobile-link">Guides</a>
       <a href="#zone" class="mobile-link">Zone & Horaires</a>
       <a href="#contact" class="mobile-link">Contact</a>
-      <a href="tel:+33661948250" class="btn btn-primary btn-full mt-1">
+      <a href="tel:+33658322864" class="btn btn-primary btn-full mt-1">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.61 1.18 2 2 0 012.59 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l.87-.87a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-        06 61 94 82 50
+        06 58 32 28 64
       </a>
     </div>
   </header>
@@ -131,12 +302,12 @@
             <strong>Intervention partout en France — 24h/24, 7j/7.</strong>
           </p>
 
-          <p class="hero-slogan">7j/7 – 24/24 — Vocke Distance</p>
+          <p class="hero-slogan">7j/7 – 24/24 — Toute Distance</p>
 
           <div class="hero-actions">
-            <a href="tel:+33661948250" class="btn btn-primary btn-lg">
+            <a href="tel:+33658322864" class="btn btn-primary btn-lg">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.61 1.18 2 2 0 012.59 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l.87-.87a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-              06 61 94 82 50
+              06 58 32 28 64
               <span class="btn-sub">Appel direct — réponse rapide</span>
             </a>
             <a href="#contact" class="btn btn-outline btn-lg">Demande de devis</a>
@@ -205,7 +376,7 @@
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
         </span>
         <p class="urgency-text"><strong>Urgence dépannage ?</strong> Nous intervenons immédiatement — appelez le</p>
-        <a href="tel:+33661948250" class="urgency-num">06 61 94 82 50</a>
+        <a href="tel:+33658322864" class="urgency-num">06 58 32 28 64</a>
       </div>
     </div>
 
@@ -232,7 +403,7 @@
               <li>Batterie à plat — démarrage</li>
               <li>Remorquage toutes distances</li>
             </ul>
-            <a href="tel:+33661948250" class="service-cta">Appeler maintenant →</a>
+            <a href="tel:+33658322864" class="service-cta">Appeler maintenant →</a>
           </article>
 
           <article class="service-card service-card--accent reveal" aria-labelledby="srv2-title">
@@ -249,7 +420,7 @@
               <li>Certificat de destruction fourni</li>
               <li>Département 58 &amp; environs</li>
             </ul>
-            <a href="tel:+33661948250" class="service-cta">Demander l'enlèvement →</a>
+            <a href="tel:+33658322864" class="service-cta">Demander l'enlèvement →</a>
           </article>
 
           <article class="service-card reveal" aria-labelledby="srv3-title">
@@ -265,226 +436,8 @@
               <li>Aide aux démarches administratives</li>
               <li>Stock renouvelé régulièrement</li>
             </ul>
-            <a href="tel:+33661948250" class="service-cta">Voir les disponibilités →</a>
+            <a href="tel:+33658322864" class="service-cta">Voir les disponibilités →</a>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══ 3. WIDGET DIAGNOSTIC — NOUVEAU ═══ -->
-    <section class="section section--dark" id="diagnostic" aria-labelledby="diag-title">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-eyebrow">Outils Pro</p>
-          <h2 id="diag-title" class="section-title">Tableau de bord mécanicien</h2>
-          <p class="section-desc">Des indicateurs issus du terrain — ce qu'un pro surveille à chaque intervention.</p>
-        </div>
-
-        <div class="dashboard-grid">
-
-          <!-- Widget 1 : Température moteur -->
-          <div class="dash-widget reveal" id="widget-temp">
-            <div class="widget-header">
-              <span class="widget-eyebrow">Capteur</span>
-              <h3 class="widget-title">Température moteur</h3>
-            </div>
-            <div class="temp-gauge-wrap">
-              <svg class="temp-svg" viewBox="0 0 200 120" aria-hidden="true">
-                <!-- Arc background -->
-                <path d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="#2a2a35" stroke-width="12" stroke-linecap="round"/>
-                <!-- Arc zones: froid, normal, chaud, critique -->
-                <path d="M 20 100 A 80 80 0 0 1 60 35" fill="none" stroke="#3b82f6" stroke-width="12" stroke-linecap="round" opacity="0.6"/>
-                <path d="M 60 35 A 80 80 0 0 1 140 35" fill="none" stroke="#10b981" stroke-width="12" stroke-linecap="round" opacity="0.8"/>
-                <path d="M 140 35 A 80 80 0 0 1 175 65" fill="none" stroke="#f59e0b" stroke-width="12" stroke-linecap="round" opacity="0.8"/>
-                <path d="M 175 65 A 80 80 0 0 1 180 100" fill="none" stroke="#ef4444" stroke-width="12" stroke-linecap="round" opacity="0.9"/>
-                <!-- Needle -->
-                <line class="temp-needle" x1="100" y1="100" x2="100" y2="28" stroke="#FF6B1A" stroke-width="2.5" stroke-linecap="round" transform-origin="100 100"/>
-                <circle cx="100" cy="100" r="6" fill="#FF6B1A"/>
-                <circle cx="100" cy="100" r="3" fill="#1c1c23"/>
-                <!-- Labels -->
-                <text x="18" y="118" fill="#3b82f6" font-size="8" font-family="'DM Sans',sans-serif" font-weight="700">FROID</text>
-                <text x="85" y="20" fill="#10b981" font-size="8" font-family="'DM Sans',sans-serif" font-weight="700" text-anchor="middle">NORMAL</text>
-                <text x="168" y="118" fill="#ef4444" font-size="8" font-family="'DM Sans',sans-serif" font-weight="700" text-anchor="end">CRIT.</text>
-                <!-- Value -->
-                <text x="100" y="82" fill="#e8e4dc" font-size="22" font-family="'Barlow Condensed',sans-serif" font-weight="900" text-anchor="middle" id="temp-value">90°</text>
-                <text x="100" y="95" fill="#7a7888" font-size="8" font-family="'DM Sans',sans-serif" text-anchor="middle">Température normale</text>
-              </svg>
-            </div>
-            <div class="widget-zones">
-              <span class="zone-chip zone-cold">❄ Froid &lt;60°</span>
-              <span class="zone-chip zone-ok">✓ Normal 80-95°</span>
-              <span class="zone-chip zone-hot">⚠ Chaud &gt;105°</span>
-            </div>
-          </div>
-
-          <!-- Widget 2 : Checklist pré-intervention -->
-          <div class="dash-widget reveal" style="--delay:100ms">
-            <div class="widget-header">
-              <span class="widget-eyebrow">Protocole</span>
-              <h3 class="widget-title">Check pré-intervention</h3>
-            </div>
-            <div class="checklist-items" id="checklist">
-              <div class="check-item" data-step="0">
-                <div class="check-icon check-done" aria-hidden="true">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                </div>
-                <div class="check-info">
-                  <span class="check-label">Sécurisation du périmètre</span>
-                  <span class="check-sub">Triangle + gilet réfléchissant</span>
-                </div>
-                <span class="check-status check-status--ok">OK</span>
-              </div>
-              <div class="check-item" data-step="1">
-                <div class="check-icon check-done" aria-hidden="true">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                </div>
-                <div class="check-info">
-                  <span class="check-label">Diagnostic électronique</span>
-                  <span class="check-sub">Lecture codes défauts OBD2</span>
-                </div>
-                <span class="check-status check-status--ok">OK</span>
-              </div>
-              <div class="check-item" data-step="2">
-                <div class="check-icon check-active" aria-hidden="true">
-                  <span class="check-spinner"></span>
-                </div>
-                <div class="check-info">
-                  <span class="check-label">Identification de la panne</span>
-                  <span class="check-sub">Analyse en cours...</span>
-                </div>
-                <span class="check-status check-status--active">EN COURS</span>
-              </div>
-              <div class="check-item check-item--pending" data-step="3">
-                <div class="check-icon check-pending" aria-hidden="true">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-                </div>
-                <div class="check-info">
-                  <span class="check-label">Devis & validation client</span>
-                  <span class="check-sub">En attente</span>
-                </div>
-                <span class="check-status check-status--pending">ATTENTE</span>
-              </div>
-              <div class="check-item check-item--pending" data-step="4">
-                <div class="check-icon check-pending" aria-hidden="true">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-                </div>
-                <div class="check-info">
-                  <span class="check-label">Réparation / Remorquage</span>
-                  <span class="check-sub">Intervention finale</span>
-                </div>
-                <span class="check-status check-status--pending">ATTENTE</span>
-              </div>
-            </div>
-            <div class="checklist-progress">
-              <div class="progress-bar-wrap">
-                <div class="progress-bar-fill" id="progress-fill" style="width:44%"></div>
-              </div>
-              <span class="progress-label">44% — Diagnostic</span>
-            </div>
-          </div>
-
-          <!-- Widget 3 : Jauge pression pneus -->
-          <div class="dash-widget reveal" style="--delay:200ms">
-            <div class="widget-header">
-              <span class="widget-eyebrow">Pneumatiques</span>
-              <h3 class="widget-title">Pression des pneus</h3>
-            </div>
-            <div class="tyre-diagram">
-              <div class="car-top-view" aria-hidden="true">
-                <!-- Carrosserie -->
-                <div class="car-body">
-                  <svg viewBox="0 0 160 280" class="car-svg">
-                    <!-- Body -->
-                    <rect x="30" y="60" width="100" height="160" rx="12" fill="#1f1f26" stroke="#2a2a35" stroke-width="2"/>
-                    <rect x="45" y="80" width="70" height="120" rx="8" fill="#16161c"/>
-                    <!-- Windshield front -->
-                    <rect x="48" y="68" width="64" height="28" rx="5" fill="#2a2a40" opacity="0.6"/>
-                    <!-- Windshield rear -->
-                    <rect x="48" y="184" width="64" height="24" rx="5" fill="#2a2a40" opacity="0.4"/>
-                    <!-- Wheels FL -->
-                    <rect x="8" y="70" width="26" height="44" rx="6" fill="#2a2a35" stroke="#3a3a45" stroke-width="1.5"/>
-                    <rect x="13" y="75" width="16" height="34" rx="4" fill="#1a1a20"/>
-                    <circle cx="21" cy="92" r="5" fill="#FF6B1A" opacity="0.8"/>
-                    <!-- Wheels FR -->
-                    <rect x="126" y="70" width="26" height="44" rx="6" fill="#2a2a35" stroke="#3a3a45" stroke-width="1.5"/>
-                    <rect x="131" y="75" width="16" height="34" rx="4" fill="#1a1a20"/>
-                    <circle cx="139" cy="92" r="5" fill="#FF6B1A" opacity="0.8"/>
-                    <!-- Wheels RL -->
-                    <rect x="8" y="166" width="26" height="44" rx="6" fill="#2a2a35" stroke="#3a3a45" stroke-width="1.5"/>
-                    <rect x="13" y="171" width="16" height="34" rx="4" fill="#1a1a20"/>
-                    <circle cx="21" cy="188" r="5" fill="#10b981" opacity="0.8"/>
-                    <!-- Wheels RR -->
-                    <rect x="126" y="166" width="26" height="44" rx="6" fill="#2a2a35" stroke="#3a3a45" stroke-width="1.5"/>
-                    <rect x="131" y="171" width="16" height="34" rx="4" fill="#1a1a20"/>
-                    <circle cx="139" cy="188" r="5" fill="#f59e0b" opacity="0.8"/>
-                  </svg>
-                  <!-- Pressure labels -->
-                  <div class="tyre-labels">
-                    <span class="tyre-val tyre-fl" data-target="2.3">2.3 bar</span>
-                    <span class="tyre-val tyre-fr" data-target="2.3">2.3 bar</span>
-                    <span class="tyre-val tyre-rl tyre-ok" data-target="2.1">2.1 bar</span>
-                    <span class="tyre-val tyre-rr tyre-warn" data-target="1.6">1.6 bar ⚠</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tyre-legend">
-              <span class="tyre-legend-item"><span class="dot-orange"></span> Pression correcte</span>
-              <span class="tyre-legend-item"><span class="dot-green-sm"></span> Légèrement bas</span>
-              <span class="tyre-legend-item"><span class="dot-yellow"></span> À regonfler</span>
-            </div>
-          </div>
-
-          <!-- Widget 4 : Codes défaut OBD2 -->
-          <div class="dash-widget dash-widget--wide reveal" style="--delay:300ms">
-            <div class="widget-header">
-              <span class="widget-eyebrow">Diagnostic électronique</span>
-              <h3 class="widget-title">Codes défauts OBD2</h3>
-              <span class="widget-badge widget-badge--scan">
-                <span class="scan-dot"></span>
-                Scan actif
-              </span>
-            </div>
-            <div class="obd-list">
-              <div class="obd-row obd-row--error">
-                <span class="obd-code">P0300</span>
-                <div class="obd-info">
-                  <span class="obd-desc">Ratés d'allumage détectés — cylindres multiples</span>
-                  <span class="obd-system">Moteur · Allumage</span>
-                </div>
-                <span class="obd-severity obd-severity--high">CRITIQUE</span>
-              </div>
-              <div class="obd-row obd-row--warn">
-                <span class="obd-code">P0171</span>
-                <div class="obd-info">
-                  <span class="obd-desc">Mélange air/carburant trop pauvre — banque 1</span>
-                  <span class="obd-system">Injection · Dépressurisation</span>
-                </div>
-                <span class="obd-severity obd-severity--med">ATTENTION</span>
-              </div>
-              <div class="obd-row obd-row--warn">
-                <span class="obd-code">B1200</span>
-                <div class="obd-info">
-                  <span class="obd-desc">Capteur de température extérieure hors plage</span>
-                  <span class="obd-system">Climatisation · Confort</span>
-                </div>
-                <span class="obd-severity obd-severity--low">MINEUR</span>
-              </div>
-              <div class="obd-row obd-row--ok">
-                <span class="obd-code">U0100</span>
-                <div class="obd-info">
-                  <span class="obd-desc">Communication CAN Bus — module ECU</span>
-                  <span class="obd-system">Réseau · Communication</span>
-                </div>
-                <span class="obd-severity obd-severity--ok">EFFACÉ</span>
-              </div>
-            </div>
-            <div class="obd-footer">
-              <span class="obd-total"><strong>3</strong> défauts actifs · <strong>1</strong> effacé</span>
-              <span class="obd-note">Données à titre illustratif — diagnostic réel sur site</span>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
@@ -498,73 +451,85 @@
           <p class="section-desc">Un professionnel bien équipé, c'est une intervention rapide et efficace.</p>
         </div>
 
-        <div class="specs-layout">
-          <div class="specs-list reveal">
-            <div class="spec-item" data-fill="95">
-              <div class="spec-label-row">
-                <span class="spec-name">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v4h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
-                  Dépanneuse plateau
-                </span>
-                <span class="spec-val">Toutes charges</span>
-              </div>
-              <div class="spec-bar"><div class="spec-bar-fill" style="--fill:95%"></div></div>
+        <div class="equip-grid">
+
+          <div class="equip-card equip-card--bars reveal">
+            <div class="equip-card-header">
+              <span class="equip-eyebrow">Véhicule & outillage</span>
+              <span class="equip-status-dot"><span class="dot-green pulse"></span> Opérationnel</span>
             </div>
-            <div class="spec-item" data-fill="100">
-              <div class="spec-label-row">
-                <span class="spec-name">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
-                  Valise diagnostic OBD2
-                </span>
-                <span class="spec-val">Multimarques</span>
+            <div class="specs-list">
+              <div class="spec-item">
+                <div class="spec-label-row">
+                  <span class="spec-name"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v4h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg> Dépanneuse plateau</span>
+                  <span class="spec-val spec-val--pct">95%</span>
+                </div>
+                <div class="spec-bar"><div class="spec-bar-fill" style="--fill:95%"></div></div>
+                <span class="spec-detail">Capacité toutes charges · camionnettes, berlines, SUV</span>
               </div>
-              <div class="spec-bar"><div class="spec-bar-fill" style="--fill:100%"></div></div>
-            </div>
-            <div class="spec-item" data-fill="85">
-              <div class="spec-label-row">
-                <span class="spec-name">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                  Outillage complet atelier
-                </span>
-                <span class="spec-val">Pro certifié</span>
+              <div class="spec-item">
+                <div class="spec-label-row">
+                  <span class="spec-name"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg> Valise diagnostic OBD2</span>
+                  <span class="spec-val spec-val--pct">100%</span>
+                </div>
+                <div class="spec-bar"><div class="spec-bar-fill spec-bar-fill--full" style="--fill:100%"></div></div>
+                <span class="spec-detail">Lecture & effacement codes · toutes marques européennes & asiatiques</span>
               </div>
-              <div class="spec-bar"><div class="spec-bar-fill" style="--fill:85%"></div></div>
-            </div>
-            <div class="spec-item" data-fill="90">
-              <div class="spec-label-row">
-                <span class="spec-name">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                  Chargeur de batterie rapide
-                </span>
-                <span class="spec-val">12V / 24V</span>
+              <div class="spec-item">
+                <div class="spec-label-row">
+                  <span class="spec-name"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg> Outillage complet atelier</span>
+                  <span class="spec-val spec-val--pct">90%</span>
+                </div>
+                <div class="spec-bar"><div class="spec-bar-fill" style="--fill:90%"></div></div>
+                <span class="spec-detail">Clés, extracteurs, jeu de douilles pro · embarqué en permanence</span>
               </div>
-              <div class="spec-bar"><div class="spec-bar-fill" style="--fill:90%"></div></div>
-            </div>
-            <div class="spec-item" data-fill="80">
-              <div class="spec-label-row">
-                <span class="spec-name">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-                  Kit urgence panne
-                </span>
-                <span class="spec-val">Embarqué 24/7</span>
+              <div class="spec-item">
+                <div class="spec-label-row">
+                  <span class="spec-name"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-4 0v2M12 12v3"/></svg> Chargeur batterie rapide</span>
+                  <span class="spec-val spec-val--pct">90%</span>
+                </div>
+                <div class="spec-bar"><div class="spec-bar-fill" style="--fill:90%"></div></div>
+                <span class="spec-detail">12V & 24V · véhicules légers et poids lourds · démarrage secours</span>
               </div>
-              <div class="spec-bar"><div class="spec-bar-fill" style="--fill:80%"></div></div>
+              <div class="spec-item">
+                <div class="spec-label-row">
+                  <span class="spec-name"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Kit urgence panne</span>
+                  <span class="spec-val spec-val--pct">80%</span>
+                </div>
+                <div class="spec-bar"><div class="spec-bar-fill" style="--fill:80%"></div></div>
+                <span class="spec-detail">Triangle, gilet, câbles, gonfleur, fluides · embarqué 24h/24</span>
+              </div>
             </div>
           </div>
 
-          <!-- Panneau expertise -->
-          <div class="expertise-panel reveal" style="--delay:150ms">
+          <div class="equip-card equip-card--profile reveal" style="--delay:120ms">
             <div class="exp-header">
               <div class="exp-icon" aria-hidden="true">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M12 14c-5 0-8 2.5-8 4v1h16v-1c0-1.5-3-4-8-4z"/></svg>
               </div>
               <div>
                 <h3 class="exp-title">Votre mécanicien</h3>
-                <p class="exp-sub">16 ans sur le terrain</p>
+                <p class="exp-sub">16 ans sur le terrain · Nièvre &amp; France</p>
               </div>
               <div class="exp-badge">
                 <span class="dot-green pulse"></span>
                 En service
+              </div>
+            </div>
+            <div class="exp-counters">
+              <div class="exp-counter">
+                <span class="exp-counter-num" data-count="16">16</span>
+                <span class="exp-counter-label">ans d'expérience</span>
+              </div>
+              <div class="exp-counter-sep"></div>
+              <div class="exp-counter">
+                <span class="exp-counter-num">24/7</span>
+                <span class="exp-counter-label">disponible</span>
+              </div>
+              <div class="exp-counter-sep"></div>
+              <div class="exp-counter">
+                <span class="exp-counter-num">🇫🇷</span>
+                <span class="exp-counter-label">toute France</span>
               </div>
             </div>
             <div class="exp-skills">
@@ -572,18 +537,67 @@
               <div class="skill-tag">⚡ Électronique auto</div>
               <div class="skill-tag">🛞 Pneumatiques</div>
               <div class="skill-tag">🔋 Électricité / Batterie</div>
-              <div class="skill-tag">🚗 Remorquage longue distance</div>
+              <div class="skill-tag">🚛 Remorquage longue distance</div>
               <div class="skill-tag">📋 Admin / Cession véhicule</div>
+              <div class="skill-tag">🔍 Diagnostic OBD multimarque</div>
+              <div class="skill-tag">🔩 Vidange & entretien courant</div>
             </div>
             <div class="exp-marques">
               <p class="exp-marques-label">Marques maîtrisées</p>
               <div class="marques-grid">
                 <span>Peugeot</span><span>Renault</span><span>Citroën</span>
                 <span>Volkswagen</span><span>Ford</span><span>Toyota</span>
-                <span>BMW</span><span>Mercedes</span><span>+ toutes</span>
+                <span>BMW</span><span>Mercedes</span><span>Opel</span>
+                <span>Fiat</span><span>Audi</span><span class="marques-all">+ toutes</span>
               </div>
             </div>
           </div>
+
+          <div class="equip-card equip-card--counters reveal" style="--delay:240ms">
+            <div class="equip-card-header">
+              <span class="equip-eyebrow">En chiffres</span>
+            </div>
+            <div class="big-counters">
+              <div class="big-counter">
+                <div class="big-counter-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
+                <span class="big-counter-num" data-count="500">500</span>
+                <span class="big-counter-unit">+</span>
+                <p class="big-counter-desc">Interventions réalisées</p>
+              </div>
+              <div class="big-counter-divider"></div>
+              <div class="big-counter">
+                <div class="big-counter-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M9 6V4h6v2"/></svg></div>
+                <span class="big-counter-num" data-count="200">200</span>
+                <span class="big-counter-unit">+</span>
+                <p class="big-counter-desc">Épaves enlevées</p>
+              </div>
+              <div class="big-counter-divider"></div>
+              <div class="big-counter">
+                <div class="big-counter-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v4h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+                <span class="big-counter-num" data-count="80">80</span>
+                <span class="big-counter-unit">+</span>
+                <p class="big-counter-desc">Véhicules vendus</p>
+              </div>
+              <div class="big-counter-divider"></div>
+              <div class="big-counter">
+                <div class="big-counter-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                <span class="big-counter-num" data-count="96">96</span>
+                <span class="big-counter-unit">dép.</span>
+                <p class="big-counter-desc">Couverts en France</p>
+              </div>
+            </div>
+            <div class="satisfaction-block">
+              <div class="satisfaction-label-row">
+                <span class="satisfaction-label">Taux de satisfaction client</span>
+                <span class="satisfaction-pct">98%</span>
+              </div>
+              <div class="spec-bar spec-bar--thick">
+                <div class="spec-bar-fill spec-bar-fill--green" style="--fill:98%"></div>
+              </div>
+              <p class="satisfaction-note">Basé sur les retours clients directs · 2 ans d'activité</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -627,9 +641,9 @@
 
         <div class="process-cta reveal">
           <p>Besoin d'une intervention maintenant ?</p>
-          <a href="tel:+33661948250" class="btn btn-primary btn-lg">
+          <a href="tel:+33658322864" class="btn btn-primary btn-lg">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.61 1.18 2 2 0 012.59 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l.87-.87a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-            06 61 94 82 50
+            06 58 32 28 64
           </a>
         </div>
       </div>
@@ -698,6 +712,114 @@
         </div>
       </div>
     </section>
+
+    <!-- ═══════════════════════════════════════════════
+         GUIDES LOCAUX — Inséré ici, après #pourquoi
+    ═══════════════════════════════════════════════ -->
+    <section class="section--guides" id="guides" aria-labelledby="guides-title">
+      <div class="container">
+
+        <div class="guides-header reveal">
+          <div class="guides-eyebrow">
+            <span class="guides-line" aria-hidden="true"></span>
+            Guides locaux
+          </div>
+          <div class="guides-title-row">
+            <h2 id="guides-title" class="guides-main-title">
+              Tout savoir sur<br />
+              le <em>dépannage auto</em><br />
+              dans la Nièvre<span style="color:var(--accent)">.</span>
+            </h2>
+            <p class="guides-subtitle">
+              Des réponses concrètes aux questions<br />
+              des automobilistes nivernais.
+            </p>
+          </div>
+        </div>
+
+        <div class="guides-grid reveal">
+
+          <!-- Card 01 -->
+          <a href="SEO/combien-coute-un-depannage.html" class="guide-card" aria-label="Combien coûte un dépannage auto ?">
+            <div class="guide-num">01</div>
+            <div class="guide-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+              </svg>
+            </div>
+            <h3 class="guide-title-card">Combien coûte un dépannage auto ?</h3>
+            <p class="guide-desc">Tarifs réels, grille de prix honnête et ce qu'il faut vraiment prévoir selon votre situation.</p>
+            <span class="guide-cta">Lire le guide →</span>
+          </a>
+
+          <!-- Card 02 -->
+          <a href="SEO/depannage-auto-nievre.html" class="guide-card" aria-label="Dépannage auto dans la Nièvre">
+            <div class="guide-num">02</div>
+            <div class="guide-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <h3 class="guide-title-card">Dépannage auto dans la Nièvre</h3>
+            <p class="guide-desc">Toutes les communes couvertes dans le 58, délais d'intervention et ce qu'on peut faire pour vous sur place.</p>
+            <span class="guide-cta">Lire le guide →</span>
+          </a>
+
+          <!-- Card 03 -->
+          <a href="SEO/enlevement-epave-gratuit-vente-vo.html" class="guide-card" aria-label="Enlèvement épave gratuit & vente VO">
+            <div class="guide-num">03</div>
+            <div class="guide-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                <polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4h6v2"/>
+              </svg>
+            </div>
+            <h3 class="guide-title-card">Épave ou véhicule d'occasion ?</h3>
+            <p class="guide-desc">L'enlèvement d'épave est gratuit. La vente VO aussi simple. Comment ça marche, étape par étape.</p>
+            <span class="guide-cta">Lire le guide →</span>
+          </a>
+
+          <!-- Card 04 -->
+          <a href="SEO/pourquoi-choisir-nbc-depannage.html" class="guide-card" aria-label="Pourquoi choisir NBC Dépannage">
+            <div class="guide-num">04</div>
+            <div class="guide-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 class="guide-title-card">Pourquoi appeler NBC Dépannage ?</h3>
+            <p class="guide-desc">Le bouche-à-oreille ne suffit plus. Ce que vous perdez à attendre, et pourquoi un pro local change tout.</p>
+            <span class="guide-cta">Lire le guide →</span>
+          </a>
+
+          <!-- Card 05 — Wide : toutes les villes -->
+          <a href="SEO/depannage-auto-nievre.html" class="guide-card guide-card--wide" aria-label="Interventions par ville dans la Nièvre">
+            <div class="guide-num">05</div>
+            <div class="guide-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+              </svg>
+            </div>
+            <h3 class="guide-title-card">Interventions par ville dans la Nièvre</h3>
+            <p class="guide-desc">NBC Dépannage couvre tout le département 58 — retrouvez votre commune et découvrez nos délais d'intervention locaux.</p>
+            <div class="guide-city-pills">
+              <span>Clamecy</span>
+              <span>Cosne-sur-Loire</span>
+              <span>Decize</span>
+              <span>Fourchambault</span>
+              <span>Garchizy</span>
+              <span>Imphy</span>
+              <span>La Charité-sur-Loire</span>
+              <span>Marzy</span>
+              <span>Varennes-Vauzelles</span>
+              <span>+ tout le 58</span>
+            </div>
+            <span class="guide-cta">Voir toutes les zones →</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+    <!-- ═══ FIN GUIDES ═══ -->
 
     <!-- ═══ 8. ZONE & HORAIRES ═══ -->
     <section class="section section--dark" id="zone" aria-labelledby="zone-title">
@@ -768,7 +890,7 @@
               </div>
             </div>
 
-            <a href="tel:+33661948250" class="btn btn-primary">
+            <a href="tel:+33658322864" class="btn btn-primary">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.61 1.18 2 2 0 012.59 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l.87-.87a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
               Appeler NBC Dépannage
             </a>
@@ -833,7 +955,7 @@
           <div class="contact-info reveal" style="--delay: 150ms">
             <div class="contact-primary">
               <p class="contact-label">Appel direct</p>
-              <a href="tel:+33661948250" class="contact-phone">06 61 94 82 50</a>
+              <a href="tel:+33658322864" class="contact-phone">06 58 32 28 64</a>
               <p class="contact-sub">Appel direct — réponse immédiate</p>
             </div>
 
@@ -850,12 +972,12 @@
 
             <div class="contact-address">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              <address>Varennes-Vauzelles, 58640 · Nièvre</address>
+              <address>1 Rue André Malraux, 58640 Varennes-Vauzelles · Nièvre</address>
             </div>
 
             <div class="contact-final-cta">
               <p>Une urgence maintenant ?<br /><strong>N'attendez pas.</strong></p>
-              <a href="tel:+33661948250" class="btn btn-primary btn-lg">
+              <a href="tel:+33658322864" class="btn btn-primary btn-lg">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.61 1.18 2 2 0 012.59 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l.87-.87a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
                 Appeler maintenant
               </a>
@@ -875,26 +997,27 @@
           <span class="brand-name">NBC<span class="brand-dot">.</span></span>
           <span class="brand-tag">Dépannage</span>
         </a>
-        <p class="footer-tagline">7j/7 – 24/24 — Vocke Distance</p>
+        <p class="footer-tagline">7j/7 – 24/24 — Toute Distance</p>
       </div>
       <div class="footer-links">
         <a href="#services">Services</a>
-        <a href="#diagnostic">Diagnostic</a>
+        <a href="#guides">Guides</a>
         <a href="#zone">Zone</a>
         <a href="#contact">Contact</a>
-        <a href="tel:+33661948250">06 61 94 82 50</a>
+        <a href="tel:+33658322864">06 58 32 28 64</a>
+        <a href="mentions-legales.html">Mentions légales</a>
       </div>
       <div class="footer-legal">
-        <p>Siège social : Varennes-Vauzelles, 58640 · Nièvre</p>
-        <p>2 ans d'ouverture · 16 ans d'expérience dans le dépannage</p>
-        <p class="footer-copy">© <span id="footer-year"></span> NBC Dépannage · Tous droits réservés</p>
+        <p>SAS NBC DÉPANNAGE · 1 Rue André Malraux, 58640 Varennes-Vauzelles · Nièvre</p>
+        <p>SIRET 934 537 556 00011 · 2 ans d'ouverture · 16 ans d'expérience</p>
+        <p class="footer-copy">© <span id="footer-year"></span> NBC Dépannage · Tous droits réservés · <a href="mentions-legales.html" style="color:var(--muted);text-decoration:underline;font-size:inherit;">Mentions légales</a></p>
       </div>
     </div>
   </footer>
 
   <!-- ═══ MOBILE BAR ═══ -->
   <div class="mobile-bar" role="navigation" aria-label="Actions rapides">
-    <a href="tel:+33661948250" class="mobile-bar-btn mobile-bar-btn--primary">
+    <a href="tel:+33658322864" class="mobile-bar-btn mobile-bar-btn--primary">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.61 1.18 2 2 0 012.59 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l.87-.87a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
       Appeler
     </a>
@@ -904,6 +1027,79 @@
     </a>
   </div>
 
-  <script src="script.js"></script>
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const toggle = document.getElementById('menu-toggle');
+    const mobileNav = document.getElementById('mobile-nav');
+    if (toggle && mobileNav) {
+      toggle.addEventListener('click', () => {
+        const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', !isOpen);
+        mobileNav.setAttribute('aria-hidden', isOpen);
+        mobileNav.classList.toggle('is-open');
+      });
+      mobileNav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          toggle.setAttribute('aria-expanded', 'false');
+          mobileNav.setAttribute('aria-hidden', 'true');
+          mobileNav.classList.remove('is-open');
+        });
+      });
+    }
+
+    // Sticky header
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    // Reveal on scroll
+    const revealEls = document.querySelectorAll('.reveal, .reveal-right');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(el => {
+        if (el.isIntersecting) {
+          const delay = el.target.style.getPropertyValue('--delay') || '0ms';
+          setTimeout(() => el.target.classList.add('visible'), parseInt(delay));
+          observer.unobserve(el.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    revealEls.forEach(el => observer.observe(el));
+
+    // Counter animation
+    const counters = document.querySelectorAll('[data-count]');
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = parseInt(el.dataset.count);
+          const duration = 1500;
+          const step = target / (duration / 16);
+          let current = 0;
+          const timer = setInterval(() => {
+            current += step;
+            if (current >= target) { current = target; clearInterval(timer); }
+            el.textContent = Math.round(current);
+          }, 16);
+          counterObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(c => counterObserver.observe(c));
+
+    // Spec bars animation
+    const bars = document.querySelectorAll('.spec-bar-fill');
+    const barObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.width = entry.target.style.getPropertyValue('--fill');
+          barObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    bars.forEach(b => barObserver.observe(b));
+  </script>
 </body>
 </html>
