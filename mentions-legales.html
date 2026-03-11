@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mentions légales — NBC Dépannage</title>
+  <meta name="description" content="Mentions légales du site nbc-depannage.fr — éditeur, hébergement, propriété intellectuelle et données personnelles." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://nbc-depannage.fr/mentions-legales.html" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231c1c22'/><text x='50%25' y='54%25' font-size='18' font-family='sans-serif' font-weight='900' fill='%23FF6B1A' text-anchor='middle' dominant-baseline='middle'>N</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg:       #111114;
+      --bg-2:     #18181d;
+      --bg-3:     #1f1f26;
+      --card:     #1c1c23;
+      --text:     #e8e4dc;
+      --muted:    #7a7888;
+      --accent:   #FF6B1A;
+      --accent-dark: #c7490e;
+      --accent-glow: rgba(255,107,26,0.15);
+      --border:   rgba(255,255,255,0.07);
+      --border-2: rgba(255,255,255,0.12);
+      --white:    #f4f0eb;
+      --font-display: 'Barlow Condensed', sans-serif;
+      --font-body:    'DM Sans', sans-serif;
+      --radius:   10px;
+      --radius-lg: 16px;
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      line-height: 1.65;
+      overflow-x: hidden;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* ── NAVBAR ── */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(17,17,20,0.88);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--border);
+    }
+    .navbar-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .brand-icon { color: var(--accent); }
+    .brand-name {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 1.4rem;
+      letter-spacing: -0.02em;
+      color: var(--white);
+    }
+    .brand-dot { color: var(--accent); }
+    .brand-tag {
+      font-size: 0.68rem;
+      font-weight: 500;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+    }
+    .btn-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-family: var(--font-body);
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--muted);
+      background: var(--bg-3);
+      border: 1px solid var(--border-2);
+      border-radius: 50px;
+      padding: 8px 18px;
+      transition: color 0.2s, border-color 0.2s, background 0.2s;
+      white-space: nowrap;
+    }
+    .btn-back:hover { color: var(--text); border-color: var(--accent); background: var(--accent-glow); }
+
+    /* ── HERO ── */
+    .ml-hero {
+      padding: 72px 24px 52px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .ml-hero::before {
+      content: '';
+      position: absolute;
+      top: -80px; left: 50%;
+      transform: translateX(-50%);
+      width: 560px; height: 360px;
+      background: radial-gradient(ellipse, rgba(255,107,26,0.1), transparent 70%);
+      pointer-events: none;
+    }
+    .ml-hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(to right, var(--border) 1px, transparent 1px), linear-gradient(to bottom, var(--border) 1px, transparent 1px);
+      background-size: 60px 60px;
+      opacity: 0.2;
+      pointer-events: none;
+    }
+    .ml-chip {
+      position: relative;
+      z-index: 1;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--accent-glow);
+      border: 1px solid rgba(255,107,26,0.3);
+      border-radius: 50px;
+      padding: 6px 16px;
+      font-size: 0.76rem;
+      font-weight: 600;
+      color: var(--accent);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .ml-title {
+      position: relative;
+      z-index: 1;
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 5vw, 3.6rem);
+      font-weight: 900;
+      color: var(--white);
+      margin: 0 0 14px;
+      letter-spacing: -0.02em;
+      line-height: 1.05;
+    }
+    .ml-title em {
+      font-style: normal;
+      color: var(--accent);
+    }
+    .ml-subtitle {
+      position: relative;
+      z-index: 1;
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin: 0;
+    }
+
+    /* ── CONTENT ── */
+    .ml-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 24px 100px;
+    }
+
+    .ml-section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px 32px;
+      margin-bottom: 14px;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.25s var(--ease);
+    }
+    .ml-section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255,107,26,0.25), transparent);
+    }
+    .ml-section:hover { border-color: rgba(255,107,26,0.22); }
+
+    .ml-section-num {
+      font-family: var(--font-display);
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .ml-section-num::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .ml-section h2 {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--white);
+      margin: 0 0 18px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .ml-section p {
+      font-size: 0.9rem;
+      line-height: 1.8;
+      color: var(--muted);
+      margin: 0 0 10px;
+    }
+    .ml-section p:last-child { margin-bottom: 0; }
+    .ml-section strong { color: var(--text); font-weight: 600; }
+    .ml-section a { color: var(--accent); transition: opacity 0.15s; }
+    .ml-section a:hover { opacity: 0.75; text-decoration: underline; }
+
+    /* Info block */
+    .ml-info-block {
+      background: var(--bg-3);
+      border: 1px solid var(--border-2);
+      border-radius: var(--radius);
+      padding: 18px 22px;
+      margin: 16px 0;
+    }
+    .ml-info-block p {
+      margin: 5px 0;
+      font-size: 0.88rem;
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+    .ml-info-block p::before {
+      content: '—';
+      color: var(--accent);
+      font-weight: 700;
+      flex-shrink: 0;
+      font-size: 0.8rem;
+    }
+
+    /* Rights grid */
+    .ml-rights {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin: 16px 0;
+    }
+    .ml-right-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--accent-glow);
+      border: 1px solid rgba(255,107,26,0.18);
+      border-radius: var(--radius);
+      padding: 10px 14px;
+      font-size: 0.84rem;
+      color: var(--text);
+      font-weight: 500;
+    }
+    .ml-right-item::before {
+      content: '✓';
+      color: var(--accent);
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    /* Visium credit */
+    .ml-visium-credit {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      color: var(--muted);
+      background: var(--bg-3);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 6px 12px;
+      margin-top: 4px;
+    }
+    .ml-visium-credit a { color: var(--accent); font-weight: 600; }
+    .ml-visium-credit a:hover { text-decoration: underline; }
+
+    /* ── FOOTER ── */
+    .ml-footer {
+      text-align: center;
+      padding: 32px 24px 48px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+    .ml-footer a { color: var(--muted); transition: color 0.15s; }
+    .ml-footer a:hover { color: var(--text); }
+    .ml-footer-sep { margin: 0 8px; opacity: 0.4; }
+
+    @media (max-width: 768px) {
+      .ml-section { padding: 22px 18px; }
+      .ml-rights { grid-template-columns: 1fr; }
+      .navbar-inner { padding: 0 16px; }
+      .brand-tag { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── NAVBAR ── -->
+<div class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="brand" aria-label="NBC Dépannage — accueil">
+      <span class="brand-icon" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 18h18M2 18v-4l5-6h9l4 6v4M2 18l-.5 2h20.5M7 21a2 2 0 100-4 2 2 0 000 4zm10 0a2 2 0 100-4 2 2 0 000 4z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M20 14l3-2 3 2v3h-6v-3z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand-name">NBC<span class="brand-dot">.</span></span>
+      <span class="brand-tag">Dépannage</span>
+    </a>
+    <a href="index.html" class="btn-back">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      Retour au site
+    </a>
+  </div>
+</div>
+
+<!-- ── HERO ── -->
+<div class="ml-hero">
+  <div class="ml-chip">
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+    Document légal
+  </div>
+  <h1 class="ml-title">Mentions <em>légales</em></h1>
+  <p class="ml-subtitle">Dernière mise à jour : 2026 &nbsp;·&nbsp; nbc-depannage.fr</p>
+</div>
+
+<!-- ── CONTENU ── -->
+<div class="ml-content">
+
+  <!-- 1. Éditeur -->
+  <div class="ml-section">
+    <div class="ml-section-num">01</div>
+    <h2>Éditeur du site</h2>
+    <p>Le présent site, accessible à l'adresse <strong>https://nbc-depannage.fr</strong>, est édité par :</p>
+    <div class="ml-info-block">
+      <p><strong>SAS NBC DÉPANNAGE</strong></p>
+      <p>Forme juridique : Société par Actions Simplifiée (SAS)</p>
+      <p>Siège social : <strong>1 Rue André Malraux, 58640 Varennes-Vauzelles</strong></p>
+      <p>SIRET : <strong>934 537 556 00011</strong></p>
+      <p>Activité : Dépannage automobile, enlèvement d'épave, achat et vente de véhicules d'occasion</p>
+      <p>Téléphone : <a href="tel:+33661948250"><strong>06 61 94 82 50</strong></a></p>
+      <p>Email : <a href="mailto:contact@nbc-depannage.fr">contact@nbc-depannage.fr</a></p>
+    </div>
+    <p>Le responsable de la publication est le représentant légal de la SAS NBC DÉPANNAGE.</p>
+  </div>
+
+  <!-- 2. Conception & réalisation -->
+  <div class="ml-section">
+    <div class="ml-section-num">02</div>
+    <h2>Conception & réalisation</h2>
+    <p>Le site <strong>nbc-depannage.fr</strong> a été conçu et développé par :</p>
+    <div class="ml-info-block">
+      <p><strong>Visium Agency</strong></p>
+      <p>Statut : Micro-entreprise</p>
+      <p>Responsable : <strong>Sandy Morlon</strong></p>
+      <p>SIREN : <strong>992 024 133</strong></p>
+      <p>Site web : <a href="https://visium.agency" target="_blank" rel="noopener noreferrer">https://visium.agency</a></p>
+      <p>Email : <a href="mailto:contact@visium.agency">contact@visium.agency</a></p>
+    </div>
+    <p>
+      <span class="ml-visium-credit">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Site réalisé par <a href="https://visium.agency" target="_blank" rel="noopener noreferrer">Visium Agency</a>
+      </span>
+    </p>
+  </div>
+
+  <!-- 3. Hébergement -->
+  <div class="ml-section">
+    <div class="ml-section-num">03</div>
+    <h2>Hébergement</h2>
+    <p>Le site est hébergé par :</p>
+    <div class="ml-info-block">
+      <p><strong>o2switch</strong></p>
+      <p>SAS au capital de 100 000 €</p>
+      <p>RCS Clermont-Ferrand : <strong>510 909 807</strong></p>
+      <p>Adresse : Chemin des Pardiaux, 63000 Clermont-Ferrand, France</p>
+      <p>Site web : <a href="https://www.o2switch.fr" target="_blank" rel="noopener noreferrer">https://www.o2switch.fr</a></p>
+    </div>
+  </div>
+
+  <!-- 4. Propriété intellectuelle -->
+  <div class="ml-section">
+    <div class="ml-section-num">04</div>
+    <h2>Propriété intellectuelle</h2>
+    <p>L'ensemble des contenus présents sur le site <strong>nbc-depannage.fr</strong> (textes, images, graphismes, logo, icônes, code source, design, etc.) est la propriété exclusive de <strong>SAS NBC DÉPANNAGE</strong> et de <strong>Visium Agency</strong>, ou fait l'objet d'une autorisation d'utilisation.</p>
+    <p>Ces contenus sont protégés par les lois en vigueur relatives à la propriété intellectuelle et au droit d'auteur. Toute reproduction, représentation, modification, publication, adaptation ou exploitation de tout ou partie des contenus, sans autorisation préalable et écrite, est strictement interdite et constitue une contrefaçon.</p>
+  </div>
+
+  <!-- 5. Responsabilité -->
+  <div class="ml-section">
+    <div class="ml-section-num">05</div>
+    <h2>Limitation de responsabilité</h2>
+    <p>Les informations présentes sur ce site sont fournies à titre indicatif. <strong>SAS NBC DÉPANNAGE</strong> s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées, mais ne peut garantir l'exactitude, la précision ou l'exhaustivité des informations mises à disposition.</p>
+    <p>L'utilisation des informations et contenus disponibles sur le site se fait sous la seule et entière responsabilité de l'utilisateur du site.</p>
+    <p><strong>SAS NBC DÉPANNAGE</strong> ne saurait être tenu responsable de tout dommage direct ou indirect résultant de l'accès au site ou de l'utilisation des informations qui y sont publiées.</p>
+  </div>
+
+  <!-- 6. Données personnelles -->
+  <div class="ml-section">
+    <div class="ml-section-num">06</div>
+    <h2>Données personnelles</h2>
+    <p>Le site <strong>nbc-depannage.fr</strong> peut collecter des données personnelles via son formulaire de contact (nom, téléphone, message). Ces informations sont utilisées exclusivement dans le cadre du traitement de votre demande et de la relation commerciale avec <strong>SAS NBC DÉPANNAGE</strong>.</p>
+    <p>Aucune donnée personnelle n'est transmise à des tiers à des fins commerciales.</p>
+    <p>Conformément au <strong>Règlement Général sur la Protection des Données (RGPD — Règlement UE 2016/679)</strong> et à la loi <strong>Informatique et Libertés n°78-17</strong>, vous disposez des droits suivants :</p>
+    <div class="ml-rights">
+      <div class="ml-right-item">Droit d'accès à vos données</div>
+      <div class="ml-right-item">Droit de rectification</div>
+      <div class="ml-right-item">Droit à l'effacement</div>
+      <div class="ml-right-item">Droit d'opposition</div>
+    </div>
+    <p>Pour exercer ces droits ou pour toute question relative au traitement de vos données, contactez-nous à : <a href="mailto:contact@nbc-depannage.fr"><strong>contact@nbc-depannage.fr</strong></a></p>
+    <p>Vous disposez également du droit d'introduire une réclamation auprès de la <strong>CNIL</strong> — <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer">www.cnil.fr</a>.</p>
+  </div>
+
+  <!-- 7. Cookies -->
+  <div class="ml-section">
+    <div class="ml-section-num">07</div>
+    <h2>Cookies</h2>
+    <p>Le site <strong>nbc-depannage.fr</strong> peut utiliser des cookies techniques nécessaires au bon fonctionnement du site. Aucun cookie de traçage ou publicitaire n'est utilisé sans votre consentement préalable.</p>
+    <p>Vous pouvez configurer votre navigateur pour refuser les cookies ou être averti lorsqu'un cookie est déposé. Cette action peut néanmoins affecter certaines fonctionnalités du site.</p>
+  </div>
+
+  <!-- 8. Liens hypertextes -->
+  <div class="ml-section">
+    <div class="ml-section-num">08</div>
+    <h2>Liens hypertextes</h2>
+    <p>Le site <strong>nbc-depannage.fr</strong> peut contenir des liens hypertextes vers d'autres sites internet. Ces liens sont proposés à titre informatif uniquement.</p>
+    <p><strong>SAS NBC DÉPANNAGE</strong> n'exerce aucun contrôle sur le contenu de ces sites tiers et décline toute responsabilité quant aux informations qui y sont publiées.</p>
+  </div>
+
+  <!-- 9. Droit applicable -->
+  <div class="ml-section">
+    <div class="ml-section-num">09</div>
+    <h2>Droit applicable & juridiction</h2>
+    <p>Les présentes mentions légales sont régies et interprétées conformément au <strong>droit français</strong>.</p>
+    <p>En cas de litige relatif à l'utilisation du site, les parties s'engagent à rechercher une solution amiable. À défaut, les tribunaux compétents seront ceux du ressort du siège social de <strong>SAS NBC DÉPANNAGE</strong>, situé à <strong>Varennes-Vauzelles (58640)</strong>, sauf dispositions légales impératives contraires.</p>
+  </div>
+
+</div>
+
+<!-- ── FOOTER ── -->
+<footer class="ml-footer">
+  <p>
+    © 2026 SAS NBC DÉPANNAGE
+    <span class="ml-footer-sep">·</span>
+    SIRET 934 537 556 00011
+    <span class="ml-footer-sep">·</span>
+    <a href="index.html">Retour au site</a>
+    <span class="ml-footer-sep">·</span>
+    Site réalisé par <a href="https://visium.agency" target="_blank" rel="noopener noreferrer">Visium Agency</a>
+  </p>
+</footer>
+
+</body>
+</html>
