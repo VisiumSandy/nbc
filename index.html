@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NBC Dépannage — Dépannage Auto, Enlèvement Épave, Achat/Vente VO · Toute la France</title>
+  <meta name="description" content="NBC Dépannage : dépannage auto 24h/24 7j/7, enlèvement d'épave gratuit, achat et vente de véhicules d'occasion. Intervention toute la France. Appelez le 06 61 94 82 50." />
+  <link rel="canonical" href="https://nbc-depannage.fr/" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231c1c22'/><text x='50%25' y='54%25' font-size='18' font-family='sans-serif' font-weight='900' fill='%23FF6B1A' text-anchor='middle' dominant-baseline='middle'>N</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "NBC Dépannage",
+    "telephone": "+33661948250",
+    "address": {"@type": "PostalAddress","streetAddress": "Varennes-Vauzelles","addressLocality": "Varennes-Vauzelles","postalCode": "58640","addressCountry": "FR"},
+    "openingHoursSpecification": {"@type": "OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens": "00:00","closes": "23:59"},
+    "areaServed": "France"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ═══ LIVE TICKER ═══ -->
+  <div class="live-ticker" id="live-ticker">
+    <div class="ticker-inner">
+      <span class="ticker-label">
+        <span class="ticker-dot"></span>
+        LIVE
+      </span>
+      <div class="ticker-track">
+        <div class="ticker-content" id="ticker-content">
+          <span>🔧 Dépannage effectué — Autoroute A6, Lyon</span>
+          <span>🚗 Épave enlevée — Nevers, 58</span>
+          <span>⚡ Batterie à plat — Intervention en cours</span>
+          <span>🔩 Remorquage — Paris vers Mâcon</span>
+          <span>✅ VO vendue — Peugeot 308, contrôlée technique OK</span>
+          <span>🛞 Crevaison réparée — RN7, Cosne-sur-Loire</span>
+          <span>🔧 Dépannage effectué — Autoroute A6, Lyon</span>
+          <span>🚗 Épave enlevée — Nevers, 58</span>
+          <span>⚡ Batterie à plat — Intervention en cours</span>
+          <span>🔩 Remorquage — Paris vers Mâcon</span>
+          <span>✅ VO vendue — Peugeot 308, contrôlée technique OK</span>
+          <span>🛞 Crevaison réparée — RN7, Cosne-sur-Loire</span>
+        </div>
+      </div>
+      <a href="tel:+33661948250" class="ticker-cta">Appeler →</a>
+    </div>
+  </div>
+
+  <!-- ═══ HEADER ═══ -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="header-inner container">
+      <a href="#hero" class="brand" aria-label="NBC Dépannage — accueil">
+        <span class="brand-icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 18h18M2 18v-4l5-6h9l4 6v4M2 18l-.5 2h20.5M7 21a2 2 0 100-4 2 2 0 000 4zm10 0a2 2 0 100-4 2 2 0 000 4z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M20 14l3-2 3 2v3h-6v-3z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-name">NBC<span class="brand-dot">.</span></span>
+        <span class="brand-tag">Dépannage</span>
+      </a>
+
+      <nav class="header-nav" aria-label="Navigation principale">
+        <a href="#services">Services</a>
+        <a href="#diagnostic">Diagnostic</a>
+        <a href="#zone">Zone</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="#contact" class="btn btn-ghost">Devis / Contact</a>
+        <a href="tel:+33661948250" class="btn btn-primary" aria-label="Appeler NBC Dépannage">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.61 1.18 2 2 0 012.59 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l.87-.87a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Appeler maintenant
+        </a>
+      </div>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <a href="#services" class="mobile-link">Services</a>
+      <a href="#diagnostic" class="mobile-link">Diagnostic</a>
+      <a href="#zone" class="mobile-link">Zone & Horaires</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+      <a href="tel:+33661948250" class="btn btn-primary btn-full mt-1">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.61 1.18 2 2 0 012.59 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l.87-.87a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        06 61 94 82 50
+      </a>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ═══ 1. HERO ═══ -->
+    <section class="hero" id="hero" aria-label="Présentation NBC Dépannage">
+      <div class="hero-noise" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-content reveal">
+          <div class="hero-badges">
+            <span class="badge badge-live">
+              <span class="badge-pulse" aria-hidden="true"></span>
+              Disponible maintenant
+            </span>
+            <span class="badge badge-outline">16 ans d'expérience</span>
+            <span class="badge badge-france">🇫🇷 Toute la France</span>
+          </div>
+
+          <h1 class="hero-title">
+            Dépannage auto<span class="accent-text">.</span><br />
+            <span class="hero-title-line2">Enlèvement épave<span class="accent-text">.</span></span><br />
+            <span class="hero-title-line3">Achat &amp; Vente VO<span class="accent-text">.</span></span>
+          </h1>
+
+          <p class="hero-sub">
+            Un seul numéro, trois expertises.<br />
+            <strong>Intervention partout en France — 24h/24, 7j/7.</strong>
+          </p>
+
+          <p class="hero-slogan">7j/7 – 24/24 — Vocke Distance</p>
+
+          <div class="hero-actions">
+            <a href="tel:+33661948250" class="btn btn-primary btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.61 1.18 2 2 0 012.59 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l.87-.87a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              06 61 94 82 50
+              <span class="btn-sub">Appel direct — réponse rapide</span>
+            </a>
+            <a href="#contact" class="btn btn-outline btn-lg">Demande de devis</a>
+          </div>
+
+          <div class="hero-services-tags">
+            <span class="htag htag--active">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+              Dépannage &amp; Remorquage
+            </span>
+            <span class="htag">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4h6v2"/></svg>
+              Enlèvement Épave <em>Gratuit</em>
+            </span>
+            <span class="htag">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v4h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+              Achat &amp; Vente VO
+            </span>
+          </div>
+
+          <div class="trust-chips">
+            <span class="chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Intervention rapide</span>
+            <span class="chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Toute la France</span>
+            <span class="chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Entreprise locale</span>
+          </div>
+        </div>
+
+        <!-- Hero Visual — Gauge Card -->
+        <div class="hero-visual reveal-right" aria-hidden="true">
+          <div class="gauge-card">
+            <div class="gauge-ring">
+              <svg class="gauge-svg" viewBox="0 0 120 120">
+                <circle class="gauge-bg" cx="60" cy="60" r="50" />
+                <circle class="gauge-fill" cx="60" cy="60" r="50" id="gauge-avail" />
+                <text x="60" y="56" class="gauge-pct" text-anchor="middle" dominant-baseline="middle">24/7</text>
+                <text x="60" y="72" class="gauge-label-svg" text-anchor="middle">Disponibilité</text>
+              </svg>
+            </div>
+            <div class="gauge-meta">
+              <div class="gauge-stat">
+                <span class="stat-num" data-count="16">16</span>
+                <span class="stat-unit">ans</span>
+                <span class="stat-desc">d'expérience</span>
+              </div>
+              <div class="gauge-sep"></div>
+              <div class="gauge-stat">
+                <span class="stat-num" data-count="2">2</span>
+                <span class="stat-unit">ans</span>
+                <span class="stat-desc">d'ouverture</span>
+              </div>
+            </div>
+            <div class="gauge-chips">
+              <span class="g-chip">Dépannage</span>
+              <span class="g-chip">Épave</span>
+              <span class="g-chip">VO</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ URGENCY BAND ═══ -->
+    <div class="urgency-band" role="complementary" aria-label="Appel d'urgence">
+      <div class="container urgency-inner">
+        <span class="urgency-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </span>
+        <p class="urgency-text"><strong>Urgence dépannage ?</strong> Nous intervenons immédiatement — appelez le</p>
+        <a href="tel:+33661948250" class="urgency-num">06 61 94 82 50</a>
+      </div>
+    </div>
+
+    <!-- ═══ 2. SERVICES ═══ -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Ce que nous faisons</p>
+          <h2 id="services-title" class="section-title">Nos prestations</h2>
+          <p class="section-desc">Des solutions concrètes, réalisées par un professionnel qui connaît son métier.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal" aria-labelledby="srv1-title">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <div class="service-num">01</div>
+            <h3 id="srv1-title" class="service-title">Dépannage & Remorquage</h3>
+            <p class="service-desc">Panne, crevaison, batterie, accident — nous arrivons à vous où que vous soyez. Remorquage vers l'atelier de votre choix.</p>
+            <ul class="service-list">
+              <li>Panne mécanique ou électrique</li>
+              <li>Crevaison & remplacement de roue</li>
+              <li>Batterie à plat — démarrage</li>
+              <li>Remorquage toutes distances</li>
+            </ul>
+            <a href="tel:+33661948250" class="service-cta">Appeler maintenant →</a>
+          </article>
+
+          <article class="service-card service-card--accent reveal" aria-labelledby="srv2-title">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4h6v2"/></svg>
+            </div>
+            <div class="service-num">02</div>
+            <div class="epave-badge">GRATUIT</div>
+            <h3 id="srv2-title" class="service-title">Enlèvement d'épave</h3>
+            <p class="service-desc">Votre véhicule hors d'usage encombre votre espace ? Nous l'enlevons gratuitement, partout dans le département.</p>
+            <ul class="service-list">
+              <li>Enlèvement gratuit à domicile</li>
+              <li>Toutes marques, tous états</li>
+              <li>Certificat de destruction fourni</li>
+              <li>Département 58 &amp; environs</li>
+            </ul>
+            <a href="tel:+33661948250" class="service-cta">Demander l'enlèvement →</a>
+          </article>
+
+          <article class="service-card reveal" aria-labelledby="srv3-title">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v4h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <div class="service-num">03</div>
+            <h3 id="srv3-title" class="service-title">Vente de véhicules d'occasion</h3>
+            <p class="service-desc">Trouvez un véhicule fiable à prix juste. Nos VO sont sélectionnés et vérifiés par un mécanicien expérimenté.</p>
+            <ul class="service-list">
+              <li>Véhicules contrôlés par nos soins</li>
+              <li>Transparence sur l'état du véhicule</li>
+              <li>Aide aux démarches administratives</li>
+              <li>Stock renouvelé régulièrement</li>
+            </ul>
+            <a href="tel:+33661948250" class="service-cta">Voir les disponibilités →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 3. WIDGET DIAGNOSTIC — NOUVEAU ═══ -->
+    <section class="section section--dark" id="diagnostic" aria-labelledby="diag-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Outils Pro</p>
+          <h2 id="diag-title" class="section-title">Tableau de bord mécanicien</h2>
+          <p class="section-desc">Des indicateurs issus du terrain — ce qu'un pro surveille à chaque intervention.</p>
+        </div>
+
+        <div class="dashboard-grid">
+
+          <!-- Widget 1 : Température moteur -->
+          <div class="dash-widget reveal" id="widget-temp">
+            <div class="widget-header">
+              <span class="widget-eyebrow">Capteur</span>
+              <h3 class="widget-title">Température moteur</h3>
+            </div>
+            <div class="temp-gauge-wrap">
+              <svg class="temp-svg" viewBox="0 0 200 120" aria-hidden="true">
+                <!-- Arc background -->
+                <path d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="#2a2a35" stroke-width="12" stroke-linecap="round"/>
+                <!-- Arc zones: froid, normal, chaud, critique -->
+                <path d="M 20 100 A 80 80 0 0 1 60 35" fill="none" stroke="#3b82f6" stroke-width="12" stroke-linecap="round" opacity="0.6"/>
+                <path d="M 60 35 A 80 80 0 0 1 140 35" fill="none" stroke="#10b981" stroke-width="12" stroke-linecap="round" opacity="0.8"/>
+                <path d="M 140 35 A 80 80 0 0 1 175 65" fill="none" stroke="#f59e0b" stroke-width="12" stroke-linecap="round" opacity="0.8"/>
+                <path d="M 175 65 A 80 80 0 0 1 180 100" fill="none" stroke="#ef4444" stroke-width="12" stroke-linecap="round" opacity="0.9"/>
+                <!-- Needle -->
+                <line class="temp-needle" x1="100" y1="100" x2="100" y2="28" stroke="#FF6B1A" stroke-width="2.5" stroke-linecap="round" transform-origin="100 100"/>
+                <circle cx="100" cy="100" r="6" fill="#FF6B1A"/>
+                <circle cx="100" cy="100" r="3" fill="#1c1c23"/>
+                <!-- Labels -->
+                <text x="18" y="118" fill="#3b82f6" font-size="8" font-family="'DM Sans',sans-serif" font-weight="700">FROID</text>
+                <text x="85" y="20" fill="#10b981" font-size="8" font-family="'DM Sans',sans-serif" font-weight="700" text-anchor="middle">NORMAL</text>
+                <text x="168" y="118" fill="#ef4444" font-size="8" font-family="'DM Sans',sans-serif" font-weight="700" text-anchor="end">CRIT.</text>
+                <!-- Value -->
+                <text x="100" y="82" fill="#e8e4dc" font-size="22" font-family="'Barlow Condensed',sans-serif" font-weight="900" text-anchor="middle" id="temp-value">90°</text>
+                <text x="100" y="95" fill="#7a7888" font-size="8" font-family="'DM Sans',sans-serif" text-anchor="middle">Température normale</text>
+              </svg>
+            </div>
+            <div class="widget-zones">
+              <span class="zone-chip zone-cold">❄ Froid &lt;60°</span>
+              <span class="zone-chip zone-ok">✓ Normal 80-95°</span>
+              <span class="zone-chip zone-hot">⚠ Chaud &gt;105°</span>
+            </div>
+          </div>
+
+          <!-- Widget 2 : Checklist pré-intervention -->
+          <div class="dash-widget reveal" style="--delay:100ms">
+            <div class="widget-header">
+              <span class="widget-eyebrow">Protocole</span>
+              <h3 class="widget-title">Check pré-intervention</h3>
+            </div>
+            <div class="checklist-items" id="checklist">
+              <div class="check-item" data-step="0">
+                <div class="check-icon check-done" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div class="check-info">
+                  <span class="check-label">Sécurisation du périmètre</span>
+                  <span class="check-sub">Triangle + gilet réfléchissant</span>
+                </div>
+                <span class="check-status check-status--ok">OK</span>
+              </div>
+              <div class="check-item" data-step="1">
+                <div class="check-icon check-done" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div class="check-info">
+                  <span class="check-label">Diagnostic électronique</span>
+                  <span class="check-sub">Lecture codes défauts OBD2</span>
+                </div>
+                <span class="check-status check-status--ok">OK</span>
+              </div>
+              <div class="check-item" data-step="2">
+                <div class="check-icon check-active" aria-hidden="true">
+                  <span class="check-spinner"></span>
+                </div>
+                <div class="check-info">
+                  <span class="check-label">Identification de la panne</span>
+                  <span class="check-sub">Analyse en cours...</span>
+                </div>
+                <span class="check-status check-status--active">EN COURS</span>
+              </div>
+              <div class="check-item check-item--pending" data-step="3">
+                <div class="check-icon check-pending" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                </div>
+                <div class="check-info">
+                  <span class="check-label">Devis & validation client</span>
+                  <span class="check-sub">En attente</span>
+                </div>
+                <span class="check-status check-status--pending">ATTENTE</span>
+              </div>
+              <div class="check-item check-item--pending" data-step="4">
+                <div class="check-icon check-pending" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                </div>
+                <div class="check-info">
+                  <span class="check-label">Réparation / Remorquage</span>
+                  <span class="check-sub">Intervention finale</span>
+                </div>
+                <span class="check-status check-status--pending">ATTENTE</span>
+              </div>
+            </div>
+            <div class="checklist-progress">
+              <div class="progress-bar-wrap">
+                <div class="progress-bar-fill" id="progress-fill" style="width:44%"></div>
+              </div>
+              <span class="progress-label">44% — Diagnostic</span>
+            </div>
+          </div>
+
+          <!-- Widget 3 : Jauge pression pneus -->
+          <div class="dash-widget reveal" style="--delay:200ms">
+            <div class="widget-header">
+              <span class="widget-eyebrow">Pneumatiques</span>
+              <h3 class="widget-title">Pression des pneus</h3>
+            </div>
+            <div class="tyre-diagram">
+              <div class="car-top-view" aria-hidden="true">
+                <!-- Carrosserie -->
+                <div class="car-body">
+                  <svg viewBox="0 0 160 280" class="car-svg">
+                    <!-- Body -->
+                    <rect x="30" y="60" width="100" height="160" rx="12" fill="#1f1f26" stroke="#2a2a35" stroke-width="2"/>
+                    <rect x="45" y="80" width="70" height="120" rx="8" fill="#16161c"/>
+                    <!-- Windshield front -->
+                    <rect x="48" y="68" width="64" height="28" rx="5" fill="#2a2a40" opacity="0.6"/>
+                    <!-- Windshield rear -->
+                    <rect x="48" y="184" width="64" height="24" rx="5" fill="#2a2a40" opacity="0.4"/>
+                    <!-- Wheels FL -->
+                    <rect x="8" y="70" width="26" height="44" rx="6" fill="#2a2a35" stroke="#3a3a45" stroke-width="1.5"/>
+                    <rect x="13" y="75" width="16" height="34" rx="4" fill="#1a1a20"/>
+                    <circle cx="21" cy="92" r="5" fill="#FF6B1A" opacity="0.8"/>
+                    <!-- Wheels FR -->
+                    <rect x="126" y="70" width="26" height="44" rx="6" fill="#2a2a35" stroke="#3a3a45" stroke-width="1.5"/>
+                    <rect x="131" y="75" width="16" height="34" rx="4" fill="#1a1a20"/>
+                    <circle cx="139" cy="92" r="5" fill="#FF6B1A" opacity="0.8"/>
+                    <!-- Wheels RL -->
+                    <rect x="8" y="166" width="26" height="44" rx="6" fill="#2a2a35" stroke="#3a3a45" stroke-width="1.5"/>
+                    <rect x="13" y="171" width="16" height="34" rx="4" fill="#1a1a20"/>
+                    <circle cx="21" cy="188" r="5" fill="#10b981" opacity="0.8"/>
+                    <!-- Wheels RR -->
+                    <rect x="126" y="166" width="26" height="44" rx="6" fill="#2a2a35" stroke="#3a3a45" stroke-width="1.5"/>
+                    <rect x="131" y="171" width="16" height="34" rx="4" fill="#1a1a20"/>
+                    <circle cx="139" cy="188" r="5" fill="#f59e0b" opacity="0.8"/>
+                  </svg>
+                  <!-- Pressure labels -->
+                  <div class="tyre-labels">
+                    <span class="tyre-val tyre-fl" data-target="2.3">2.3 bar</span>
+                    <span class="tyre-val tyre-fr" data-target="2.3">2.3 bar</span>
+                    <span class="tyre-val tyre-rl tyre-ok" data-target="2.1">2.1 bar</span>
+                    <span class="tyre-val tyre-rr tyre-warn" data-target="1.6">1.6 bar ⚠</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tyre-legend">
+              <span class="tyre-legend-item"><span class="dot-orange"></span> Pression correcte</span>
+              <span class="tyre-legend-item"><span class="dot-green-sm"></span> Légèrement bas</span>
+              <span class="tyre-legend-item"><span class="dot-yellow"></span> À regonfler</span>
+            </div>
+          </div>
+
+          <!-- Widget 4 : Codes défaut OBD2 -->
+          <div class="dash-widget dash-widget--wide reveal" style="--delay:300ms">
+            <div class="widget-header">
+              <span class="widget-eyebrow">Diagnostic électronique</span>
+              <h3 class="widget-title">Codes défauts OBD2</h3>
+              <span class="widget-badge widget-badge--scan">
+                <span class="scan-dot"></span>
+                Scan actif
+              </span>
+            </div>
+            <div class="obd-list">
+              <div class="obd-row obd-row--error">
+                <span class="obd-code">P0300</span>
+                <div class="obd-info">
+                  <span class="obd-desc">Ratés d'allumage détectés — cylindres multiples</span>
+                  <span class="obd-system">Moteur · Allumage</span>
+                </div>
+                <span class="obd-severity obd-severity--high">CRITIQUE</span>
+              </div>
+              <div class="obd-row obd-row--warn">
+                <span class="obd-code">P0171</span>
+                <div class="obd-info">
+                  <span class="obd-desc">Mélange air/carburant trop pauvre — banque 1</span>
+                  <span class="obd-system">Injection · Dépressurisation</span>
+                </div>
+                <span class="obd-severity obd-severity--med">ATTENTION</span>
+              </div>
+              <div class="obd-row obd-row--warn">
+                <span class="obd-code">B1200</span>
+                <div class="obd-info">
+                  <span class="obd-desc">Capteur de température extérieure hors plage</span>
+                  <span class="obd-system">Climatisation · Confort</span>
+                </div>
+                <span class="obd-severity obd-severity--low">MINEUR</span>
+              </div>
+              <div class="obd-row obd-row--ok">
+                <span class="obd-code">U0100</span>
+                <div class="obd-info">
+                  <span class="obd-desc">Communication CAN Bus — module ECU</span>
+                  <span class="obd-system">Réseau · Communication</span>
+                </div>
+                <span class="obd-severity obd-severity--ok">EFFACÉ</span>
+              </div>
+            </div>
+            <div class="obd-footer">
+              <span class="obd-total"><strong>3</strong> défauts actifs · <strong>1</strong> effacé</span>
+              <span class="obd-note">Données à titre illustratif — diagnostic réel sur site</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 4. SPECS TECHNIQUES ═══ -->
+    <section class="section section--specs" id="specs" aria-labelledby="specs-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">L'équipement</p>
+          <h2 id="specs-title" class="section-title">Matériel & Savoir-faire</h2>
+          <p class="section-desc">Un professionnel bien équipé, c'est une intervention rapide et efficace.</p>
+        </div>
+
+        <div class="specs-layout">
+          <div class="specs-list reveal">
+            <div class="spec-item" data-fill="95">
+              <div class="spec-label-row">
+                <span class="spec-name">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v4h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                  Dépanneuse plateau
+                </span>
+                <span class="spec-val">Toutes charges</span>
+              </div>
+              <div class="spec-bar"><div class="spec-bar-fill" style="--fill:95%"></div></div>
+            </div>
+            <div class="spec-item" data-fill="100">
+              <div class="spec-label-row">
+                <span class="spec-name">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+                  Valise diagnostic OBD2
+                </span>
+                <span class="spec-val">Multimarques</span>
+              </div>
+              <div class="spec-bar"><div class="spec-bar-fill" style="--fill:100%"></div></div>
+            </div>
+            <div class="spec-item" data-fill="85">
+              <div class="spec-label-row">
+                <span class="spec-name">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  Outillage complet atelier
+                </span>
+                <span class="spec-val">Pro certifié</span>
+              </div>
+              <div class="spec-bar"><div class="spec-bar-fill" style="--fill:85%"></div></div>
+            </div>
+            <div class="spec-item" data-fill="90">
+              <div class="spec-label-row">
+                <span class="spec-name">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  Chargeur de batterie rapide
+                </span>
+                <span class="spec-val">12V / 24V</span>
+              </div>
+              <div class="spec-bar"><div class="spec-bar-fill" style="--fill:90%"></div></div>
+            </div>
+            <div class="spec-item" data-fill="80">
+              <div class="spec-label-row">
+                <span class="spec-name">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                  Kit urgence panne
+                </span>
+                <span class="spec-val">Embarqué 24/7</span>
+              </div>
+              <div class="spec-bar"><div class="spec-bar-fill" style="--fill:80%"></div></div>
+            </div>
+          </div>
+
+          <!-- Panneau expertise -->
+          <div class="expertise-panel reveal" style="--delay:150ms">
+            <div class="exp-header">
+              <div class="exp-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M12 14c-5 0-8 2.5-8 4v1h16v-1c0-1.5-3-4-8-4z"/></svg>
+              </div>
+              <div>
+                <h3 class="exp-title">Votre mécanicien</h3>
+                <p class="exp-sub">16 ans sur le terrain</p>
+              </div>
+              <div class="exp-badge">
+                <span class="dot-green pulse"></span>
+                En service
+              </div>
+            </div>
+            <div class="exp-skills">
+              <div class="skill-tag">⚙️ Mécanique générale</div>
+              <div class="skill-tag">⚡ Électronique auto</div>
+              <div class="skill-tag">🛞 Pneumatiques</div>
+              <div class="skill-tag">🔋 Électricité / Batterie</div>
+              <div class="skill-tag">🚗 Remorquage longue distance</div>
+              <div class="skill-tag">📋 Admin / Cession véhicule</div>
+            </div>
+            <div class="exp-marques">
+              <p class="exp-marques-label">Marques maîtrisées</p>
+              <div class="marques-grid">
+                <span>Peugeot</span><span>Renault</span><span>Citroën</span>
+                <span>Volkswagen</span><span>Ford</span><span>Toyota</span>
+                <span>BMW</span><span>Mercedes</span><span>+ toutes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 5. PROCESS ═══ -->
+    <section class="section section--dark" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Simple & rapide</p>
+          <h2 id="process-title" class="section-title">Comment ça marche</h2>
+        </div>
+
+        <div class="process-steps">
+          <div class="process-step reveal">
+            <div class="step-num">01</div>
+            <div class="step-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.61 1.18 2 2 0 012.59 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l.87-.87a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <h3 class="step-title">Vous appelez</h3>
+            <p class="step-desc">Un appel, on décroche. Vous nous expliquez la situation — on vous donne une réponse immédiate.</p>
+          </div>
+          <div class="process-arrow" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+          <div class="process-step reveal" style="--delay: 150ms">
+            <div class="step-num">02</div>
+            <div class="step-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+            </div>
+            <h3 class="step-title">Diagnostic rapide</h3>
+            <p class="step-desc">On évalue la panne, on vous communique un délai d'intervention réaliste et un tarif transparent.</p>
+          </div>
+          <div class="process-arrow" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+          <div class="process-step reveal" style="--delay: 300ms">
+            <div class="step-num">03</div>
+            <div class="step-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3 class="step-title">Intervention</h3>
+            <p class="step-desc">Notre dépanneuse arrive sur place. Travail propre, résultat garanti. Vous repartez — ou votre véhicule est en sécurité.</p>
+          </div>
+        </div>
+
+        <div class="process-cta reveal">
+          <p>Besoin d'une intervention maintenant ?</p>
+          <a href="tel:+33661948250" class="btn btn-primary btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.61 1.18 2 2 0 012.59 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l.87-.87a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            06 61 94 82 50
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 6. STATS ═══ -->
+    <section class="section section--stats" id="stats" aria-label="Chiffres clés">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-block reveal">
+            <span class="stat-big" data-count="16">16</span>
+            <span class="stat-big-unit">ans</span>
+            <p class="stat-big-desc">de dépannage professionnel</p>
+          </div>
+          <div class="stat-sep" aria-hidden="true"></div>
+          <div class="stat-block reveal" style="--delay: 100ms">
+            <span class="stat-big">24</span>
+            <span class="stat-big-unit">h/24</span>
+            <p class="stat-big-desc">disponible, sans exception</p>
+          </div>
+          <div class="stat-sep" aria-hidden="true"></div>
+          <div class="stat-block reveal" style="--delay: 200ms">
+            <span class="stat-big">7</span>
+            <span class="stat-big-unit">j/7</span>
+            <p class="stat-big-desc">week-end et jours fériés inclus</p>
+          </div>
+          <div class="stat-sep" aria-hidden="true"></div>
+          <div class="stat-block reveal" style="--delay: 300ms">
+            <span class="stat-big" data-count="2">2</span>
+            <span class="stat-big-unit">ans</span>
+            <p class="stat-big-desc">d'existence de NBC Dépannage</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 7. POURQUOI NOUS ═══ -->
+    <section class="section" id="pourquoi" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Nos engagements</p>
+          <h2 id="why-title" class="section-title">Pourquoi NBC Dépannage</h2>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card reveal">
+            <div class="why-icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+            <h3>Réactivité maximale</h3>
+            <p>On décroche, on répond, on intervient. Pas de standard téléphonique, pas de file d'attente — un pro en direct.</p>
+          </div>
+          <div class="why-card reveal" style="--delay: 100ms">
+            <div class="why-icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <h3>Tarifs transparents</h3>
+            <p>Devis clair avant intervention. Pas de mauvaise surprise sur la facture — on vous dit ce que ça coûte avant de commencer.</p>
+          </div>
+          <div class="why-card reveal" style="--delay: 200ms">
+            <div class="why-icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg></div>
+            <h3>16 ans d'expérience</h3>
+            <p>Toutes pannes, toutes marques, tous terrains. L'expérience fait la différence quand vous êtes au bord de la route.</p>
+          </div>
+          <div class="why-card reveal" style="--delay: 300ms">
+            <div class="why-icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <h3>Partout en France</h3>
+            <p>Basé à Varennes-Vauzelles, nous intervenons dans toute la France. Autoroute, ville ou campagne — on répond présent.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 8. ZONE & HORAIRES ═══ -->
+    <section class="section section--dark" id="zone" aria-labelledby="zone-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Où nous intervenons</p>
+          <h2 id="zone-title" class="section-title">Zone & Horaires</h2>
+        </div>
+
+        <div class="zone-layout">
+          <div class="zone-map reveal" aria-label="Zone d'intervention France entière">
+            <svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+              <path d="M90 50 L75 65 L60 80 L55 100 L60 120 L50 140 L55 165 L70 185 L85 200 L100 215 L115 225 L130 230 L145 240 L160 235 L175 225 L190 210 L200 195 L215 180 L225 160 L230 140 L225 120 L230 105 L220 90 L210 80 L200 70 L185 60 L170 52 L155 48 L140 45 L125 46 L110 48 Z" fill="var(--accent)" opacity="0.07" stroke="var(--accent)" stroke-width="1.2"/>
+              <circle cx="150" cy="155" r="12" fill="var(--accent)" opacity="0.12"/>
+              <circle cx="150" cy="155" r="6" fill="var(--accent)" opacity="0.8"/>
+              <text x="150" y="142" fill="var(--text)" font-size="8.5" text-anchor="middle" font-family="'DM Sans',sans-serif" font-weight="700">Varennes-Vauzelles</text>
+              <line x1="150" y1="155" x2="80" y2="90" stroke="var(--accent)" stroke-width="0.6" stroke-dasharray="3 4" opacity="0.3"/>
+              <line x1="150" y1="155" x2="210" y2="90" stroke="var(--accent)" stroke-width="0.6" stroke-dasharray="3 4" opacity="0.3"/>
+              <line x1="150" y1="155" x2="75" y2="160" stroke="var(--accent)" stroke-width="0.6" stroke-dasharray="3 4" opacity="0.3"/>
+              <line x1="150" y1="155" x2="215" y2="165" stroke="var(--accent)" stroke-width="0.6" stroke-dasharray="3 4" opacity="0.3"/>
+              <line x1="150" y1="155" x2="155" y2="230" stroke="var(--accent)" stroke-width="0.6" stroke-dasharray="3 4" opacity="0.3"/>
+              <line x1="150" y1="155" x2="150" y2="58" stroke="var(--accent)" stroke-width="0.6" stroke-dasharray="3 4" opacity="0.3"/>
+              <circle cx="120" cy="78" r="3" fill="var(--muted)" opacity="0.5"/>
+              <text x="120" y="72" fill="var(--muted)" font-size="7" text-anchor="middle" font-family="'DM Sans',sans-serif">Paris</text>
+              <circle cx="185" cy="235" r="3" fill="var(--muted)" opacity="0.5"/>
+              <text x="185" y="246" fill="var(--muted)" font-size="7" text-anchor="middle" font-family="'DM Sans',sans-serif">Marseille</text>
+              <circle cx="72" cy="170" r="3" fill="var(--muted)" opacity="0.5"/>
+              <text x="72" y="164" fill="var(--muted)" font-size="7" text-anchor="middle" font-family="'DM Sans',sans-serif">Bordeaux</text>
+              <circle cx="215" cy="155" r="3" fill="var(--muted)" opacity="0.5"/>
+              <text x="215" y="149" fill="var(--muted)" font-size="7" text-anchor="middle" font-family="'DM Sans',sans-serif">Lyon</text>
+              <text x="150" y="275" fill="var(--muted)" font-size="8" text-anchor="middle" font-family="'DM Sans',sans-serif">Intervention · Toute la France</text>
+            </svg>
+          </div>
+
+          <div class="zone-info reveal" style="--delay: 150ms">
+            <div class="zone-block">
+              <h3>Zone d'intervention</h3>
+              <p>NBC Dépannage intervient sur <strong>l'ensemble du territoire français</strong>. Autoroute, nationale, ville ou zone rurale — on vient à vous, partout.</p>
+              <div class="zone-chips">
+                <span class="chip">🇫🇷 Toute la France</span>
+                <span class="chip">Île-de-France</span>
+                <span class="chip">Auvergne-Rhône-Alpes</span>
+                <span class="chip">PACA</span>
+                <span class="chip">Grand Est</span>
+                <span class="chip">Normandie</span>
+                <span class="chip">+ toutes régions</span>
+              </div>
+            </div>
+
+            <div class="zone-block">
+              <h3>Horaires d'ouverture</h3>
+              <div class="hours-list">
+                <div class="hours-row">
+                  <span class="hours-day">Lun – Dim</span>
+                  <span class="hours-sep"></span>
+                  <span class="hours-val hours-val--open"><span class="dot-green"></span>24h/24 · 7j/7</span>
+                </div>
+                <div class="hours-row">
+                  <span class="hours-day">Jours fériés</span>
+                  <span class="hours-sep"></span>
+                  <span class="hours-val hours-val--open"><span class="dot-green"></span>Ouvert</span>
+                </div>
+                <div class="hours-row hours-row--accent">
+                  <span class="hours-day">Urgences</span>
+                  <span class="hours-sep"></span>
+                  <span class="hours-val hours-val--open"><span class="dot-green pulse"></span>Toujours disponible</span>
+                </div>
+              </div>
+            </div>
+
+            <a href="tel:+33661948250" class="btn btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.61 1.18 2 2 0 012.59 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l.87-.87a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              Appeler NBC Dépannage
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 9. CONTACT ═══ -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Nous joindre</p>
+          <h2 id="contact-title" class="section-title">Contact & Devis rapide</h2>
+          <p class="section-desc">Remplissez le formulaire, nous vous rappelons rapidement. Ou appelez directement.</p>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-form-wrap reveal">
+            <div class="contact-form-header">
+              <span class="form-badge">Rappel rapide</span>
+              <p class="form-note">Réponse sous 30 min en journée · Immédiate pour les urgences</p>
+            </div>
+
+            <form class="contact-form" id="contact-form" novalidate aria-label="Formulaire de demande de rappel">
+              <div class="form-group">
+                <label for="name" class="form-label">Votre nom <span aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Jean Dupont" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="phone" class="form-label">Téléphone <span aria-hidden="true">*</span></label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="06 xx xx xx xx" required autocomplete="tel" inputmode="tel" />
+              </div>
+              <div class="form-group">
+                <label for="subject" class="form-label">Sujet</label>
+                <select id="subject" name="subject" class="form-input form-select">
+                  <option value="">— Choisir un service —</option>
+                  <option value="depannage">Dépannage / Remorquage</option>
+                  <option value="epave">Enlèvement d'épave</option>
+                  <option value="vo">Vente VO</option>
+                  <option value="autre">Autre demande</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-input form-textarea" rows="4" placeholder="Décrivez votre situation..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                Envoyer ma demande
+              </button>
+              <p class="form-legal">Vos données ne sont utilisées que pour vous recontacter. Aucune diffusion à des tiers.</p>
+            </form>
+
+            <div class="form-success" id="form-success" hidden aria-live="polite">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              <strong>Demande envoyée !</strong>
+              <p>Nous vous rappelons dans les plus brefs délais.</p>
+            </div>
+          </div>
+
+          <div class="contact-info reveal" style="--delay: 150ms">
+            <div class="contact-primary">
+              <p class="contact-label">Appel direct</p>
+              <a href="tel:+33661948250" class="contact-phone">06 61 94 82 50</a>
+              <p class="contact-sub">Appel direct — réponse immédiate</p>
+            </div>
+
+            <div class="contact-channels">
+              <a href="mailto:contact@nbc-depannage.fr" class="channel-card" aria-label="Envoyer un email">
+                <div class="channel-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+                <div><strong>E-mail</strong><span>contact@nbc-depannage.fr</span></div>
+              </a>
+              <a href="https://www.snapchat.com/" class="channel-card" target="_blank" rel="noopener noreferrer" aria-label="Snapchat NBC Dépannage">
+                <div class="channel-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2C8.5 2 5.8 4.9 5.8 8.5c0 .8-.1 2.6-.5 3.2-.1.2-.4.4-.7.4-.2 0-.5-.1-.7-.2-.3.6-.3 1.2.4 1.5.7.3 1.7.7 2 .9s.5.5.7 1.1c.2.7.8 1.6 1.8 1.6.4 0 .8-.2 1.2-.4.5-.2 1-.5 1.9-.5s1.5.3 1.9.5c.4.2.8.4 1.2.4 1 0 1.6-.9 1.8-1.6.2-.6.4-.9.7-1.1.3-.2 1.3-.6 2-.9.7-.3.7-.9.4-1.5-.2.1-.5.2-.7.2-.3 0-.6-.2-.7-.4-.4-.6-.5-2.4-.5-3.2C18.2 4.9 15.5 2 12 2z"/></svg></div>
+                <div><strong>Snapchat</strong><span>Message rapide</span></div>
+              </a>
+            </div>
+
+            <div class="contact-address">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <address>Varennes-Vauzelles, 58640 · Nièvre</address>
+            </div>
+
+            <div class="contact-final-cta">
+              <p>Une urgence maintenant ?<br /><strong>N'attendez pas.</strong></p>
+              <a href="tel:+33661948250" class="btn btn-primary btn-lg">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.61 1.18 2 2 0 012.59 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l.87-.87a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                Appeler maintenant
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#hero" class="brand" aria-label="NBC Dépannage">
+          <span class="brand-name">NBC<span class="brand-dot">.</span></span>
+          <span class="brand-tag">Dépannage</span>
+        </a>
+        <p class="footer-tagline">7j/7 – 24/24 — Vocke Distance</p>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#diagnostic">Diagnostic</a>
+        <a href="#zone">Zone</a>
+        <a href="#contact">Contact</a>
+        <a href="tel:+33661948250">06 61 94 82 50</a>
+      </div>
+      <div class="footer-legal">
+        <p>Siège social : Varennes-Vauzelles, 58640 · Nièvre</p>
+        <p>2 ans d'ouverture · 16 ans d'expérience dans le dépannage</p>
+        <p class="footer-copy">© <span id="footer-year"></span> NBC Dépannage · Tous droits réservés</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══ MOBILE BAR ═══ -->
+  <div class="mobile-bar" role="navigation" aria-label="Actions rapides">
+    <a href="tel:+33661948250" class="mobile-bar-btn mobile-bar-btn--primary">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.61 1.18 2 2 0 012.59 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l.87-.87a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      Appeler
+    </a>
+    <a href="https://maps.google.com/?q=Varennes-Vauzelles+58640" target="_blank" rel="noopener noreferrer" class="mobile-bar-btn mobile-bar-btn--ghost">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Itinéraire
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
