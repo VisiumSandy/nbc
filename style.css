@@ -66,8 +66,9 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
 .btn-primary {
   background: var(--accent); color: #fff;
   box-shadow: 0 0 0 0 var(--accent-glow), 0 2px 12px rgba(255,107,26,0.3);
-  flex-direction: column; gap: 1px;
 }
+/* Only hero's large primary btn stacks icon+sub vertically */
+.btn-lg.btn-primary { flex-direction: column; gap: 1px; }
 .btn-primary:hover { background: var(--accent-dark); box-shadow: 0 0 0 6px var(--accent-glow), 0 4px 20px rgba(255,107,26,0.4); transform: translateY(-1px); }
 .btn-primary:active { transform: translateY(0); }
 .btn-sub { font-size: 0.68rem; font-weight: 400; opacity: 0.75; letter-spacing: 0.03em; }
@@ -134,7 +135,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
 .ticker-track { flex: 1; overflow: hidden; position: relative; }
 .ticker-track::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 40px; background: linear-gradient(to right, #0d0d10, transparent); z-index: 1; }
 .ticker-track::after { content: ''; position: absolute; right: 0; top: 0; bottom: 0; width: 40px; background: linear-gradient(to left, #0d0d10, transparent); z-index: 1; }
-.ticker-content { display: flex; gap: 60px; animation: ticker-scroll 32s linear infinite; white-space: nowrap; }
+.ticker-content { display: flex; gap: 60px; animation: ticker-scroll 55s linear infinite; white-space: nowrap; }
 .ticker-content span { font-size: 0.8rem; color: var(--muted); }
 @keyframes ticker-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 .ticker-cta { font-size: 0.75rem; font-weight: 700; color: var(--accent); flex-shrink: 0; padding: 4px 12px; border: 1px solid rgba(255,107,26,0.3); border-radius: 4px; transition: background var(--t-fast); }
