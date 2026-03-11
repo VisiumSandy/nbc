@@ -237,42 +237,7 @@
     });
   });
 
-  /* ══ 12. TICKER — vitesse adaptative selon largeur contenu ══ */
-  ready(function () {
-    var content = document.getElementById("ticker-content");
-    if (!content) return;
-
-    // px par seconde — vitesse de lecture confortable
-    var PX_PER_SEC = 80;
-
-    function applyTickerSpeed() {
-      // Largeur réelle du contenu (moitié car contenu dupliqué x2)
-      var halfWidth = content.scrollWidth / 2;
-      var duration  = halfWidth / PX_PER_SEC;
-      // Appliquer via CSS custom property
-      content.style.animation = "none";
-      content.style.transform = "translateX(0)";
-      // Forcer reflow puis relancer
-      void content.offsetWidth;
-      content.style.animation = "ticker-scroll " + duration.toFixed(1) + "s linear infinite";
-    }
-
-    // Lancer après chargement des polices (sinon scrollWidth erroné)
-    if (document.fonts && document.fonts.ready) {
-      document.fonts.ready.then(applyTickerSpeed);
-    } else {
-      setTimeout(applyTickerSpeed, 300);
-    }
-
-    // Recalculer si la fenêtre change de taille
-    var resizeTimer;
-    window.addEventListener("resize", function () {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(applyTickerSpeed, 200);
-    });
-  });
-
-  /* ══ 13. OBD SCAN ANIMATION ══ */
+  /* ══ 12. OBD SCAN ANIMATION ══ */
   ready(function() {
     var rows = document.querySelectorAll(".obd-row");
     if (!rows.length) return;
